@@ -1,9 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <windows.h> // не работает #include <locale.h>
+#include <locale.h>
 
 int main() {
-	SetConsoleOutputCP(65001);
+	setlocale(LC_ALL, "RUS");
 	float r2, r1;
 	printf("Программа расчета сопротивления двух последовательных и параллельных резисторов, которые не равны нулю:");
 
